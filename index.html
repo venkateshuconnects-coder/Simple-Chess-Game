@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-board">
+            <!-- Chessboard will be inserted here -->
+            <div id="board"></div>
+        </div>
+        <div class="sidebar">
+            <div class="move-list">
+                <h2>Move List</h2>
+                <ul id="move-list"></ul>
+            </div>
+            <div class="dashboard">
+                <h2>Dashboard</h2>
+                <div class="stats">
+                    <p>Games Played: <span id="games-played">0</span></p>
+                    <p>Won: <span id="games-won">0</span></p>
+                    <p>Drawn: <span id="games-drawn">0</span></p>
+                    <p>Lost: <span id="games-lost">0</span></p>
+                    <p>Withdrawn: <span id="games-withdrawn">0</span></p>
+                </div>
+                <div class="controls">
+                    <button id="new-game">New Game</button>
+                    <button id="toggle-mode">Play vs Bot</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Load chess.js and chessboard.js from local files -->
+    <link rel="stylesheet" href="lib/chessboard.min.css">
+    <!-- chessboard.js v1.0.0 requires jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="lib/chessboard.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
